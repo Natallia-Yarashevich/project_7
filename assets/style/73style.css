@@ -1,0 +1,70 @@
+body {
+	text-align: center;
+	font-size: 1em;
+	font-family: sans-serif;
+	color: #1c0475;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 10%  2fr 1fr 1fr 10%;
+    grid-template-areas:"h h h h h h h h h h h h  "
+                        "m m m m m m m m a a a a "
+                        "o o o o t t t t a a a a"
+                        "th th th th th th th th a a a a "
+                        "f f f f f f f f f f f f";
+    
+    gap: 10px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    max-width: 1024x;
+    width: 100%;
+    height: 100vh;
+}
+.header{
+    grid-area:h ;
+    background-color: darkgray;
+}
+.main{
+    grid-area: m ;
+    background-color: rgb(230, 120, 200);
+}
+
+
+.section__one{
+    grid-area: o ;
+    background-color: rgb(120, 230, 144);
+}
+.section__twoo{
+    grid-area: t ;
+    background-color: rgb(120, 230, 144);
+}
+
+.section__three{
+    grid-area: th ;
+    background-color: rgb(120, 230, 144);
+}
+
+
+.aside{
+    grid-area: a ;
+    background-color: rgb(171, 120, 230);
+}
+
+.footer{
+    grid-area: f;
+    display: flex;
+    border: 1px solid black;
+    justify-content: space-around;
+    background-color: darkgrey;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.item{ 
+    border: solid #1c0475 1pxs;
+    background-color: #fff;
+    align-items: center;
+    margin:5px  auto;
+}
